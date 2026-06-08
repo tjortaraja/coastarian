@@ -171,6 +171,18 @@
       text-shadow: 0 5px 22px rgba(0, 0, 0, 0.4);
     }
 
+    .brand-mark {
+      position: absolute;
+      top: clamp(1.25rem, 3vw, 2.5rem);
+      left: clamp(1.5rem, 4vw, 4rem);
+      z-index: 1;
+      width: clamp(2.1rem, 3.2vw, 2.65rem);
+      display: block;
+      height: auto;
+      opacity: 0.95;
+      filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.34));
+    }
+
     h1 {
       max-width: 9ch;
       font-family: "Cormorant Garamond", Georgia, serif;
@@ -322,6 +334,12 @@
         gap: 1rem;
       }
 
+      .brand-mark {
+        top: 1.25rem;
+        left: 1.25rem;
+        width: 2.25rem;
+      }
+
       .brand-kicker {
         left: 1.25rem;
         bottom: 1rem;
@@ -350,6 +368,7 @@
   <main class="holding-page" aria-label="Coastarian.com coming soon">
     <span class="water-motion" aria-hidden="true"></span>
     <span class="tree-motion" aria-hidden="true"></span>
+    <img class="brand-mark" src="images/monogram-c-main-aqua.png" alt="Coastarian monogram">
     <section class="content">
       <p class="brand-kicker">Coastarian.com</p>
       <h1>Coastarian</h1>
